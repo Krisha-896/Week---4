@@ -1,0 +1,55 @@
+<html>
+<head>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1"> P1 Tag </p>
+		<p id="p2"> P2 Tag </p>
+		<p id="p3"> P3 Tag </p>
+	</div>
+
+	<ul id="myList">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	</ul>
+	<p>Click the button to insert an item to the list.</p>
+	<button onclick="myFunction()">Try it</button>
+	
+	
+	
+<script>
+
+	function myFunction() {
+		  var newItem = document.createElement("LI");
+		  var textnode = document.createTextNode("Water");
+		  newItem.appendChild(textnode);
+
+		  var list = document.getElementById("myList");
+		  list.insertBefore(newItem, list.childNodes[0]);
+		}
+/* 
+	var ptag = document.createElement("p");
+	var tnode= document.createTextNode("New P Tag.."); 
+	ptag.appendChild(tnode);
+
+	var ele = document.getElementById("div1");
+	ele.appendChild(ptag);	//For Append New Child 
+	
+	
+	function myFunction() {
+		  var newItem = document.createElement("LI");
+		  var textnode = document.createTextNode("Water");
+		  newItem.appendChild(textnode);
+
+		  var list = document.getElementById("myList");
+		  list.insertBefore(newItem, list.childNodes[4]);
+		}
+		
+		
+		*/
+</script>
+
+
+</body>
+</html>
+

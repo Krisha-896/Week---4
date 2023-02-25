@@ -1,0 +1,99 @@
+<html>
+<body>
+
+<h2>JavaScript object </h2>
+
+<script>
+
+//// Number object
+	
+	
+	var val = Number.MAX_VALUE;
+     document.write ("Value of Number.MAX_VALUE : " + val );
+	  document.write("<br/><br/>");
+	 var val1 = Number.MIN_VALUE;
+      document.write("Value of Number.MIN_VALUE : " + val1 );
+			  
+	document.write("<br/><br/>");
+	
+	
+	
+	//////////////////////////////////////////////////////////////////
+	// boolean object
+	
+	document.write("<br/><br/> -------boolean object-------- <br/><br/>");
+	
+	 var flag = new Boolean(false); 
+         document.write( "flag.toString is : " + flag.toString() ); 
+	
+	//////////////////////////////////////////////////////////////////
+	// Sring object
+	
+	document.write("<br/><br/>------- string object---------- <br/><br/>");
+	
+	var str = new String( "This is string" );
+			
+         document.writeln("str.charAt(0) is:" + str.charAt(0)); 
+         document.writeln("<br/>str.charAt(1) is:" + str.charAt(1)); 
+		 
+	var str1 = new String( "This is string one" );
+    var str2 = new String( "This is string two" );
+    
+	var str3 = str1.concat( str2 );      
+         
+	document.writeln("<br/><br/> Concatenated String :" + str3); 
+		 
+		 var str = "Apples are round, and Apples are Juicy.";
+         document.write("<br/><br/>" + str.toUpperCase( ));
+		 
+	//////////////////////////////////////////////////////////////////
+	// Math object
+	
+	document.write("<br/><br/>------- Math object---------- <br/><br/>");	 
+	
+	var value = Math.ceil(45.95);
+document.write("Ceiling Value : " + value );
+ var value = Math.floor(45.20);
+document.write("<br />Floor Value : " + value ); 
+var value = Math.max(-45,95); 
+document.write("<br />Max Value : " + value ); 
+var value = Math.min(-45,20);
+document.write("<br />Min Value : " + value );
+var value = Math.log(100);
+ document.write("<br />Log Value : " + value );
+ var value = Math.pow(5,2);
+ document.write("<br />power Value : " + value );
+ 
+ 
+ //////////////////////////////////////////////////////////////////
+	// Math object
+
+document.write("<br/><br/>------- Date object---------- <br/><br/>");	 
+	 
+ var dt = Date();
+ document.write("Date and Time : " + dt ); 
+
+var dt = new Date("July 20, 2021 23:15:00");
+         document.write("<br/> getDate() : " + dt.getDate() ); 
+		 document.write("<br/> getDay() : " + dt.getDay() ); 
+		 document.write("<br/>getFullYear() : " + dt.getFullYear() ); 
+
+//////////////////////////////////////////////////////////////////
+	// own object		 
+document.write("<br/><br/>------- JavaScript own object---------- <br/><br/>");	 
+		 
+var Myobj;
+var name,id;
+//creating an object 
+Myobj = new Object();
+//setting properties to Myobj 
+Myobj.id=10; 
+Myobj.name="Varsha";
+document.write("The ID is : " +Myobj.id);
+ document.write("<br/> The Name is:" +Myobj.name)
+
+</script>
+
+</body>
+</html>
+
